@@ -11,7 +11,7 @@ namespace cs
        //Complete Code
        loadAmount_ = 0;
        char emptyStr[]{""}; // an empty C-style string
-       strcpy_s(emptyStr, loadedMaterial_); //set the load to empty C-style string
+       strcpy_s(loadedMaterial_, emptyStr); //set the load to empty C-style string
     }
     
     bool PickupTruck::isEmpty() const
@@ -20,6 +20,7 @@ namespace cs
        if (loadAmount_ == 0){
            return true;
        }
+	   return false;
     }
     
     void PickupTruck::load(const char* loadedMaterial, int loadAmount)

@@ -21,7 +21,9 @@ int main()
     K.stop();
     cout << Tesla << endl;
     cout << Ford << endl;
-	cout << "Tom Marazzo, SN 123-456-789" << endl;
+	cout << "Group submission - Jeel Patel  #200395854" << endl;
+	cout << "                   Zinal Patel #200387807" << endl;
+	system("pause");
 
     return 0;
 }
