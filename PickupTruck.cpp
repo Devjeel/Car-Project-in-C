@@ -54,5 +54,23 @@ namespace cs
     std::ostream& PickupTruck::display(std::ostream& os) const
     {
         //Complete Code
+        if(isEmpty())
+        {
+            os << "This pickup truck is not carrying any load";
+        }
+        else
+        {
+            os << "This pickup truck is carrying " << loadAmount_ << " kgs of " << loadedMaterial_;
+        }
+
+        if(speed() > 0)
+        {
+            os << ", and is traveling at the speed of " << speed() << " km/h.";
+        }
+        else
+        {
+            os << "and is parked.";
+        }
+        return os;
     }
 }
