@@ -25,7 +25,7 @@ namespace cs
     {
         //Complete Code
         //Keep Breaking until 0 speed
-        while (car_.speed() == 0){
+        while (car_.speed()){
             car_.brake();
         }
         //print status 
